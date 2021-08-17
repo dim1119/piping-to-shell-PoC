@@ -4,7 +4,7 @@ Proof of Concept why piping from curl/wget to shell is asking for trouble. Flask
 ## Demonstration
 * First of all, setup the server.
 	* `python3 server.py`
-* In a browser and access `/script.sh`. The dummy script should appear.
+* Open a browser and access `/script.sh`. The dummy script should appear.
 	* ![Browser](./images/browser_output.png)
 * Open a new terminal and setup a listener for the reverse shell.
 	* `nc -nvlp 5555`
@@ -16,4 +16,4 @@ Proof of Concept why piping from curl/wget to shell is asking for trouble. Flask
 
 ## Remedy
 
-Don't pipe into shell or at least curl/wget the file before executing it :).
+Don't pipe into shell (especially using sudo) or at least curl/wget the file before executing it :). 
